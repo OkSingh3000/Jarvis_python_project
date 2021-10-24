@@ -102,7 +102,7 @@ if __name__ == '__main__':
             speak(f"Sir, The time is {strTime} ")
 
         elif 'open atom' in query:
-            codePath = "C:\\Users\\oksin\\AppData\\Local\\atom\\atom"
+            codePath = "C:\\Users\\AppData\\Local\\atom\\atom"
             os.startfile(codePath)
 
         elif 'thank you' in query:
@@ -112,7 +112,7 @@ if __name__ == '__main__':
             try:
                 speak("What should i say?")
                 content = takeCommand()
-                to = "1871913029@axiscolleges.in"
+                to = "other@gmail.com"
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
